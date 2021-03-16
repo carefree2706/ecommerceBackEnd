@@ -7,10 +7,10 @@ router.get("/", (req, res) => {
   Tag.findAll({
     include: {
       model: Product,
-    },
+    }
   })
     .then((tagData) => res.json(tagData))
-    .catch((err) => {
+    .catch(err => {
       console.log(err);
       res.status(500).json(err);
     });
@@ -24,7 +24,7 @@ router.get("/:id", (req, res) => {
       id: req.params.id,
     },
     include: {
-      model: Product,
+      model: Product
     }
   })
     .then(tagData => res.json(tagData))
@@ -75,7 +75,7 @@ router.put("/:id", (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  ag.destroy({
+  Tag.destroy({
     where: {
       id: req.params.id
     }
