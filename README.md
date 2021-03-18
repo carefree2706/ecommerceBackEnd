@@ -30,7 +30,7 @@
 * GET,PUT, POST and DELETE via backend E-commerce.
 
 ## Contributor Guidelines
-* Under the code of conduct section
+* Under the code of conduct section.
 
 ## Code of Conduct
 * [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct.md)
